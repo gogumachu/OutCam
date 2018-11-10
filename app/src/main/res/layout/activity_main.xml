@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f2f4f7"
+    tools:context=".MainActivity">
+
+
+    <ImageView
+        android:layout_margin="72sp"
+        android:layout_marginVertical="92dp"
+        android:id="@+id/imageView"
+        android:layout_width="216dp"
+        android:layout_height="89dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="41dp"
+        app:srcCompat="@drawable/img_logo_2" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="200dp"
+        android:orientation="vertical">
+
+        <RadioButton
+            android:layout_marginLeft="220dp"
+            android:textSize="11sp"
+            android:textColor="#949494"
+            android:text="로그인 상태 유지"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:id="@+id/user_id"
+            android:background="#ffffff"
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:drawableLeft="@drawable/ic_mail_fix_20"
+            android:drawableStart="@drawable/ic_mail_fix_20"
+            android:hint="아이디"
+            android:padding="10dp" />
+
+        <EditText
+            android:background="#ffffff"
+            android:id="@+id/user_pw"
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:drawableLeft="@drawable/ic_key_fix_20"
+            android:drawableStart="@drawable/ic_key_fix_20"
+            android:hint="비밀번호"
+            android:inputType="textPassword"
+            android:padding="10dp" />
+
+        <TextView
+            android:id="@+id/btn_signin"
+            android:layout_marginTop="20dp"
+            android:paddingTop="14dp"
+            android:gravity="center_horizontal"
+            android:layout_gravity="center"
+            android:textColor="#ffffff"
+            android:text="로그인"
+            android:background="#ff4b4b"
+            android:textSize="15sp"
+            android:layout_width="280dp"
+            android:layout_height="48dp"
+            />
+
+        <TextView
+            android:id="@+id/btnMap"
+            android:layout_marginTop="10dp"
+            android:paddingTop="14dp"
+            android:gravity="center_horizontal"
+            android:layout_gravity="center"
+            android:textColor="#ffffff"
+            android:text="회원가입"
+            android:background="#3a3a3a"
+            android:textSize="15sp"
+            android:layout_width="280dp"
+            android:layout_height="48dp"
+            />
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:gravity="center_horizontal"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="11sp"
+            android:textColor="#949494"
+            android:text="아이디찾기 | 비밀번호찾기"
+            />
+
+        <ImageView
+            android:layout_marginTop="20dp"
+            android:gravity="center_horizontal"
+            android:layout_gravity="center"
+            android:src="@drawable/login_kakao"
+            android:layout_width="280dp"
+            android:layout_height="50dp" />
+    </LinearLayout>
+
+
+</RelativeLayout>

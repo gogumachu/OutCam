@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/my_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#ffffff"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        app:titleTextColor="#000000">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="135dp"
+            android:gravity="center"
+            android:src="@drawable/ic_siren_active_24" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="신고하기"
+            android:textColor="#393939"
+            android:textSize="18sp" />
+
+    </android.support.v7.widget.Toolbar>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/image1"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="20dp"
+                    android:src="@drawable/ic_calendar_fix_24" />
+
+                <TextView
+                    android:id="@+id/date_tt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_toRightOf="@+id/image1"
+                    android:text="2018년 11월 10일 (토)"
+                    android:textColor="#b4b4b4"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/image2"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="20dp"
+                    android:src="@drawable/ic_location_fix_24" />
+
+                <TextView
+                    android:id="@+id/adrress_t"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_toRightOf="@+id/image2"
+                    android:text="몰카빌딩"
+                    android:textColor="#b4b4b4"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/image3"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="20dp"
+                    android:src="@drawable/ic_camera_fix_28" />
+
+                <TextView
+                    android:id="@+id/locainfo_tt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_toRightOf="@+id/image3"
+                    android:text="3층 여자화장실 2번째 칸 휴지통 옆"
+                    android:textColor="#b4b4b4"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/image4"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="20dp"
+                    android:src="@drawable/ic_photo_fix_24" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_toRightOf="@+id/image3"
+                    android:text="사진"
+                    android:textColor="#b4b4b4"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="180dp"
+                    android:layout_marginTop="20dp"
+                    android:text="(1장 이상 사진 첨부 필수, 최대 5장)"
+                    android:textColor="#ff4b4b"
+                    android:textSize="9sp" />
+            </LinearLayout>
+
+            <!-- 사진 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="96dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/image5_1"
+                    android:layout_width="76dp"
+                    android:layout_height="76dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="20dp"
+                    android:paddingLeft="16dp"
+                    android:src="@drawable/black" />
+
+                <ImageView
+                    android:id="@+id/image6"
+                    android:layout_width="76dp"
+                    android:layout_height="76dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_toRightOf="@+id/image5"
+                    android:paddingLeft="16dp"
+                    android:src="@drawable/black" />
+
+                <ImageView
+                    android:id="@+id/image7"
+                    android:layout_width="76dp"
+                    android:layout_height="76dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_toRightOf="@+id/image5"
+                    android:paddingLeft="16dp"
+                    android:src="@drawable/black" />
+
+                <ImageView
+                    android:id="@+id/image8"
+                    android:layout_width="76dp"
+                    android:layout_height="76dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_toRightOf="@+id/image5"
+                    android:paddingLeft="16dp"
+                    android:src="@drawable/black" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/image9"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="20dp"
+                    android:src="@drawable/ic_list_fix_24" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_toRightOf="@+id/image3"
+                    android:text="내용"
+                    android:textColor="#b4b4b4"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/contt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="20dp"
+                android:background="@android:color/transparent"
+                android:lineSpacingExtra="8sp"
+                android:textColor="#b4b4b4"
+                android:textSize="12sp" />
+
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>
